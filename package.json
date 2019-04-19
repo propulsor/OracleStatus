@@ -1,0 +1,33 @@
+{
+  "name": "oraclestatus",
+  "version": "1.0.0",
+  "description": "Web server for oracles to update their status",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc -t es2018",
+    "start-server": "node lib/server.js",
+    "start-user": "node lib/user.js",
+    "server": "run-s build start-server",
+    "user": "run-s build start-user"
+  },
+  "author": "propulsor (propulsor.ichimoku@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/basic": "^5.1.0",
+    "@hapi/hapi": "^18.2.0",
+    "@zapjs/provider": "^2.2.1",
+    "@zapjs/registry": "^2.2.1",
+    "boom": "^7.3.0",
+    "hapi": "^18.1.0",
+    "npm-run-all": "^4.1.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "socket.io": "^2.2.0",
+    "socketio-auth": "^0.1.1",
+    "web3": "1.0.0-beta.37",
+    "web3-utils": "^1.0.0-beta.52"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.3"
+  }
+}
